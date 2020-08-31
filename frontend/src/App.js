@@ -4,9 +4,9 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ArticleListPage from './pages/ArticleListPage';
 import NavigationBar from './NavigationBar';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import ContactPage from './pages/ContactPage';
 import NotFound from './components/NotFound';
+import ArticlePage from './pages/ArticlePage';
 
 const App = () =>(
     <Router>
@@ -19,6 +19,7 @@ const App = () =>(
                 <Route path='/about' component={AboutPage} exact />
                 <Route path='/blog' component={ArticleListPage} exact/>
                 <Route path='/contact' component={ContactPage} exact/>
+                <Route path='/articles/:title' component={ArticlePage}/>
                 <Route component={NotFound}/>
             </Switch>
         </div>
