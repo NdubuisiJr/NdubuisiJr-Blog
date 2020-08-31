@@ -24,9 +24,22 @@ a:hover{
   color: var(--mainBrown);
 }
 
+.index-header{
+  min-height: 50vh;
+  background-image: linear-gradient(rgba(21, 45, 30, 0.4), rgba(21, 45, 30, 0.4)), url("../images/pix2.png");
+  background-color: var(--mainGreen); 
+  color: var(--mainWhite);
+}
 .index-header h5{
   color: #FFB598;
 }
+
+.icon-img{
+    float: left;
+    width:  50px;
+    height: 50px;
+    object-fit: cover;
+  }
 
 .index-header button {
 border-color: #FFFFFF;
@@ -373,7 +386,6 @@ footer, .footer-copyright{
   }
 }
 
-
 .showcase h5{
   color: #FFB598;
 }
@@ -389,58 +401,4 @@ footer, .footer-copyright{
 .r-n-r button:hover{
   background-color: #E5E5E5;
   color: var(--mainWhite);
-}
-
-.post-section {
-  text-align: center;
-  font-weight: bold;
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-}
-.name{
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid rgb(181, 181, 240);
-  display: inline-block;
-  width: 100%;
-}
-#content{
-  height: 300px;
-  width: 100%;
-}
-#news-list{
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  list-style: none;
-  text-align: center;
-  margin-top: 2%;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.article-img{
-  float: left;
-  width:  100px;
-  height: 200px;
-  object-fit: cover;
-}
-.icon-img{
-  float: left;
-  width:  50px;
-  height: 50px;
-  object-fit: cover;
-}
-.navbar-fixed-top{
-  position:fixed;
-  right:0;
-  left:0;
-  z-index:1030
-}
-.navbar-fixed-top{
-  top:0;
-  border-width:0 0 1px
-}
-.img-article{
-  margin-bottom: 10px;
 }
