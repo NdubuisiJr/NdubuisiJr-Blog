@@ -1,11 +1,8 @@
 import React from 'react';
+import DisplayLayout from '../components/DisplayLayout';
 
 const AboutPage = () =>(
-    <div className='container'>
-        <div className='row my-5'>
-                This is the About page
-        </div>
-    </div>
+    <DisplayLayout content='This is the About page'/>
 );
 
 export default AboutPage;

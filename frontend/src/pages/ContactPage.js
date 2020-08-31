@@ -1,11 +1,8 @@
 import React from 'react';
+import DisplayLayout from '../components/DisplayLayout';
 
 const ContactPage = ()=>(
-    <div className='container'>
-        <div className='row my-5'>
-            This is the Contact Page
-        </div>
-    </div>
+    <DisplayLayout content='This will display contact details'/>
 );
 
 export default ContactPage;

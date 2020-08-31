@@ -3,6 +3,7 @@ import propTypes from 'prop-types';
 import data from '../data';
 import NotFound from '../components/NotFound';
 import Header from '../components/Header';
+import DisplayLayout from '../components/DisplayLayout';
 
 const ArticlePage = ({match}) =>{
     const title = match.params.title;
@@ -12,9 +13,7 @@ const ArticlePage = ({match}) =>{
     return(
         <>
         <Header header={title} imageUrl={articleToDisplay.imgUrl} />
-        <div className='container'>
-            <div className='row my-5'></div>
-        </div>
+        <DisplayLayout content='This shows all articles'/>
         </>
     );
 
