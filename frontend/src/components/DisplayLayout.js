@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AboutPage = () =>(
+const DisplayLayout = ()=>(
     <div className='container'>
         <div className='row my-5'>
-                This is the About page
+            
         </div>
     </div>
 );
 
-export default AboutPage;
+export default DisplayLayout;

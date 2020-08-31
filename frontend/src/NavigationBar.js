@@ -1,7 +1,6 @@
 import React from 'react';
 import {Navbar,Nav} from 'react-bootstrap';
 import catoon3 from './images/catoon3.JPG';
-import './css/main.css';
 
 const NavigationBar = () =>(
     <div>

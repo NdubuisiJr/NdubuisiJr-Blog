@@ -20,16 +20,6 @@ nav, a{
   color: var(--mainWhite);
 }
 
-a:hover{
-  color: var(--mainBrown);
-}
-
-.index-header{
-  min-height: 50vh;
-  background-image: linear-gradient(rgba(21, 45, 30, 0.4), rgba(21, 45, 30, 0.4)), url("../images/pix2.png");
-  background-color: var(--mainGreen); 
-  color: var(--mainWhite);
-}
 .index-header h5{
   color: #FFB598;
 }

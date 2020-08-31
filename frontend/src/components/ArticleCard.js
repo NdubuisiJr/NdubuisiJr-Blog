@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import '../css/main.css';
+import {Link} from 'react-router-dom';
 
 const ArticleCard = ({title, displayText, imgUrl})=>(
     <div className="col-10 mx-auto col-lg-6 img-section my-3">
@@ -13,7 +13,7 @@ const ArticleCard = ({title, displayText, imgUrl})=>(
                         <p>{displayText}</p>
                     </div>
                     <div className="check d-flex justify-content-around my-4">
-                        <button type="button">Reservation</button>
+                        <Link type="button" to={`/articles/${title}`}>Read more...</Link>
                     </div>
                 </div>
             </div>

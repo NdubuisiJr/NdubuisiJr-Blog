@@ -1,9 +1,17 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import '../css/main.css';
+import styled from 'styled-components';
 
-const Header = ({header})=>(
-    <header className="header">
+const HeaderStyle = styled.header`
+    min-height: 50vh;
+    padding-top: 15vh;
+    background-image: linear-gradient(rgba(21, 45, 30, 0.4), rgba(21, 45, 30, 0.4)), url(${props=>props.imageUrl});
+    background-color: var(--mainGreen); 
+    color: var(--mainWhite);
+`;
+
+const Header = ({header, imageUrl})=>(
+    <HeaderStyle imageUrl={imageUrl} className="header">
         <div className="container-fluid">
             <div className="row height-max index-header  align-items-center text-center text-uppercase">
                 <div className="mx-auto text-uppercase">
@@ -13,11 +21,12 @@ const Header = ({header})=>(
             
             </div>
         </div>
-    </header>
+    </HeaderStyle>
 );
 
 Header.propTypes = {
-    header: propTypes.string.isRequired
+    header: propTypes.string.isRequired,
+    imageUrl: propTypes.string.isRequired
 };
 
 export default Header;

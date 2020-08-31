@@ -7,6 +7,7 @@ import NavigationBar from './NavigationBar';
 import ContactPage from './pages/ContactPage';
 import NotFound from './components/NotFound';
 import ArticlePage from './pages/ArticlePage';
+import Footer from './components/Footer';
 
 const App = () =>(
     <Router>
@@ -22,6 +23,9 @@ const App = () =>(
                 <Route path='/articles/:title' component={ArticlePage}/>
                 <Route component={NotFound}/>
             </Switch>
+        </div>
+        <div>
+            <Footer/>
         </div>
     </Router>
 );

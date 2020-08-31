@@ -7,7 +7,7 @@ const Footer = () =>(
             <div className="row">
                 <div className="slide col-12 col-md-4 mb-md-0 mb-3" data-aos="fade-up" data-aos-delay="150">
                     <div className="float-left">
-                        <img src={catoon3} width="150px"/>
+                        <img src={catoon3} className='icon-img'/>
                         <ul className="list-unstyled">
                             <li>
                                 <div className=" footer-copyright mt-3">© 2020 Copyright: Ndubuisi Jr Chukuigwe

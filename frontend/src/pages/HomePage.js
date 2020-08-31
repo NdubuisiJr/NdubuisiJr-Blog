@@ -1,12 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import pix2 from '../images/pix2.png';
 
 const HomePage = () =>(
     <>
-        <Header header='Loves Building Software'/>
-        <div>This is the Home page of my blog</div>
-        <Footer/>
+        <Header header='Loves Building Software' imageUrl={pix2}/>
+        <div className='container'>
+            <div className='row my-5'></div>
+        </div>
     </>
 );
 
