@@ -4,6 +4,7 @@ import data from '../data';
 import NotFound from '../components/NotFound';
 import Header from '../components/Header';
 import DisplayLayout from '../components/DisplayLayout';
+import Paragraph from '../components/Paragraph';
 
 const ArticlePage = ({match}) =>{
     const title = match.params.title;
@@ -12,8 +13,17 @@ const ArticlePage = ({match}) =>{
         return <NotFound/>;
     return(
         <>
-        <Header header={title} imageUrl={articleToDisplay.imgUrl} />
-        <DisplayLayout content='This shows all articles'/>
+        <Header header={title} imageCaption={articleToDisplay.imgCaption} 
+            imageUrl={articleToDisplay.imgUrl} />
+        <DisplayLayout content={
+            articleToDisplay.paragraphs.map((paragraph,key)=>{
+                return (
+                    <Paragraph key={key} text={paragraph.text}
+                        imgUrl={paragraph.imgUrl} imgCaption={paragraph.imgCaption} 
+                        links={paragraph.links}/>
+                );
+            })
+        }/>
         </>
     );
 

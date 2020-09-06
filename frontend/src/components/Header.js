@@ -10,13 +10,14 @@ const HeaderStyle = styled.header`
     color: var(--mainWhite);
 `;
 
-const Header = ({header, imageUrl})=>(
+const Header = ({header, imageUrl, imageCaption})=>(
     <HeaderStyle imageUrl={imageUrl} className="header">
         <div className="container-fluid">
             <div className="row height-max index-header  align-items-center text-center text-uppercase">
                 <div className="mx-auto text-uppercase">
                     <h5>Ndubuisi Jr Chukuigwe</h5>
                     <h1>{header}</h1>
+                    <h6>{imageCaption}</h6>
                 </div>
             
             </div>
@@ -26,7 +27,8 @@ const Header = ({header, imageUrl})=>(
 
 Header.propTypes = {
     header: propTypes.string.isRequired,
-    imageUrl: propTypes.string.isRequired
+    imageUrl: propTypes.string.isRequired,
+    imageCaption: propTypes.string
 };
 
 export default Header;
