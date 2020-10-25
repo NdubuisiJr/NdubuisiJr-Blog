@@ -3,22 +3,16 @@ import propTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
 const ArticleCard = ({title, displayText, imgUrl})=>(
-    <div className="col-10 mx-auto col-lg-6 img-section my-3">
-        <div className="card">
-            <img className="card-img-top" src={imgUrl} alt="Card image" style={{width:'100%'}}/>
-            <div className="card-body">
-                <div className="">
-                    <div className="d-flex justify-content-center my-4">
-                        <h3>{title}</h3>
-                        <p>{displayText}</p>
-                    </div>
-                    <div className="check d-flex justify-content-around my-4">
-                        <Link type="button" to={`/articles/${title}`}>Read more...</Link>
-                    </div>
-                </div>
-            </div>
+    <>
+        <img src={imgUrl} alt="Card image" style={{width:'100%'}}/>
+        <div>
+            <h3>{title}</h3>
+            <p>{displayText}</p>
         </div>
-    </div>
+        <div>
+            <Link type="button" to={`/articles/${title}`}>Read more...</Link>
+        </div>
+    </>
 );
 
 ArticleCard.propTypes = {

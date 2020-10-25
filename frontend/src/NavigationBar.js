@@ -18,9 +18,6 @@ const NavigationBar = () =>(
                     <Nav.Link href="/blog">Blog</Nav.Link>
                     <Nav.Link href="/about">About</Nav.Link>
                 </Nav>
-                <Nav>
-                    <Nav.Link href="/contact">Contact</Nav.Link>
-                </Nav>
             </Navbar.Collapse>
         </Navbar>
     </div>

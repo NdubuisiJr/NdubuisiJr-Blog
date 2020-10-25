@@ -11,16 +11,11 @@ const HeaderStyle = styled.header`
 `;
 
 const Header = ({header, imageUrl, imageCaption})=>(
-    <HeaderStyle imageUrl={imageUrl} className="header">
-        <div className="container-fluid">
-            <div className="row height-max index-header  align-items-center text-center text-uppercase">
-                <div className="mx-auto text-uppercase">
-                    <h5>Ndubuisi Jr Chukuigwe</h5>
-                    <h1>{header}</h1>
-                    <h6>{imageCaption}</h6>
-                </div>
-            
-            </div>
+    <HeaderStyle imageUrl={imageUrl}>
+        <div>
+            <h5>Ndubuisi Jr Chukuigwe</h5>
+            <h1>{header}</h1>
+            <h6>{imageCaption}</h6>
         </div>
     </HeaderStyle>
 );

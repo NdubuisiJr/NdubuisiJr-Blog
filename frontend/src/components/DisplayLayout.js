@@ -2,11 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 const DisplayLayout = ({content})=>(
-    <div className='container'>
-        <div className='row my-5'>
-            {content}
-        </div>
-    </div>
+    <div>{content}</div>
 );
 
 DisplayLayout.propTypes = {
