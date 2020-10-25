@@ -9,8 +9,8 @@ const DisplayLayout = ({content})=>(
     </div>
 );
 
-DisplayLayout.propTypes ={
-    content: propTypes.object.isRequired
+DisplayLayout.propTypes = {
+    content: propTypes.any.isRequired
 };
 
 export default DisplayLayout;
