@@ -1,6 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import reactStringReplace from 'react-string-replace';
+import '../css/paragraph.css';
 
 const Paragraph = ({text, imgUrl,imgCaption,links})=>{
     let replaced=text;   

@@ -2,8 +2,9 @@ import React from 'react';
 import DisplayLayout from '../components/DisplayLayout';
 import Header from '../components/Header';
 import pix2 from '../images/pix2.png';
+import '../css/contact.css';
 
-const AboutPage = () =>(
+const ContactPage = () =>(
    <>
     <Header header='Loves Building Software' imageUrl={pix2}/>
     <DisplayLayout content={
@@ -17,4 +18,4 @@ const AboutPage = () =>(
    </>
 );
 
-export default AboutPage;
+export default ContactPage;

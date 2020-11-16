@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import pix2 from '../images/pix2.png';
 import DisplayLayout from '../components/DisplayLayout';
+import '../css/home.css';
 
 const HomePage = () =>(
     <>

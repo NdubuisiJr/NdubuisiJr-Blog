@@ -1,6 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import styled from 'styled-components';
+import '../css/header.css';
 
 const HeaderStyle = styled.header`
     min-height: 50vh;
