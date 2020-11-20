@@ -56,6 +56,16 @@ const data = [
                     }
                 ]
             },
+        ],
+        comments:[
+            {
+                name:'Jon Snow',
+                comment: 'This is an interesting article. Thanks!'
+            },
+            {
+                name:'Kin Pin',
+                comment: 'Awesome article.'
+            }
         ]
     },
     {

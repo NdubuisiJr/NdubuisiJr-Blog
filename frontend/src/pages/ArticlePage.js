@@ -5,6 +5,7 @@ import NotFound from '../components/NotFound';
 import Header from '../components/Header';
 import DisplayLayout from '../components/DisplayLayout';
 import Paragraph from '../components/Paragraph';
+import Comment from '../components/comment';
 
 const ArticlePage = ({match}) =>{
     const title = match.params.title;
@@ -24,6 +25,7 @@ const ArticlePage = ({match}) =>{
                 );
             })
         }/>
+        <Comment comments={articleToDisplay.comments}/>
         </>
     );
 
