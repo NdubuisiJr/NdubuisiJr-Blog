@@ -18,7 +18,6 @@ const Comment = ({comments})=>{
             name:nameValue,
             comment:commentValue
         });
-        console.log(comments);
     };
 
     const currentComments = comments!=undefined? comments.map(comment=>{
